@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <!-----Navigation---->
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">TEJKIRAN</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+   aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#top">HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">SKILLS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#work">WORKS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">CONTACT</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</section>
+<!--------------HOME---------->
+<section id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" id="about">
+      <p>Hello</p>
+      <h2>I'm <font color="#17d1ac">TEJKIRAN</font></h2>
+      <p class="about-content">I am pursing my UG Degree in Computer Science & Engineering.And the apart from that I'm a Web Developer.
+      And I'm keen in continuing my Masters in AI</p>
+
+      <button id="redirect" type="button" name="button">View Cv</button>
+      <script type="text/javascript">
+        document.querySelector('#redirect')
+          .addEventListener('click', () => {
+            window.location.href = 'files/Resume.pdf';
+          });
+      </script>
+
+    </div>
+      <div class="col-md-6">
+        <img src="pic.jpg" alt="">
+      </div>
+    </div>
+    </div>
+    <div class="social">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+    </div>
+</section>
+
+<!---About--->
+<section id="about">
+  <div class="container">
+    <h1>About Me</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <img style="width:300px;height:400px;" src="pic1.jpg" alt="">
+      </div>
+      <div class="col-md-6" id="center">
+        <h2 style="font-weight:bold;">TEJKIRAN</h2>
+        <div class="about-content">
+          III Year B.E Computer Science student at
+          Sri Venkateshwara College Of Engineering, SriPerumbudur
+          with excellent academic record and keen interest and
+          practical exposure in the field of Information Security,Computer Networks
+          especially Web applications security.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--------skills------>
+<section id="skills">
+  <div class="container">
+    <h1>Skills of Mine</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <p>C/C++</p>
+        <div class="progress">
+          <div class="progress-bar" style="width:60%;">60%</div>
+        </div>
+        <p>Python</p>
+        <div class="progress">
+          <div class="progress-bar" style="width:65%;">65%</div>
+        </div>
+        <p>Html/Css</p>
+        <div class="progress">
+          <div class="progress-bar" style="width:80%;">80%</div>
+        </div>
+        <p>JavaScript</p>
+        <div class="progress">
+          <div class="progress-bar" style="width:70%;">70%</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img style="width:400px;height:350px;" src="lap1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-----------Work------------>
+
+<section id="work" class="works">
+  <h1 class="section-title">Work</h1>
+  <div class="img-area">
+    <div class="single_img">
+      <img src="work1.jpg" alt="">
+    </div>
+    <div class="single_img">
+      <img src="work2.jpg" alt="">
+    </div>
+    <div class="single_img">
+      <img src="work3.jpg" alt="">
+    </div>
+    <div class="single_img">
+      <img src="work4.jpg" alt="">
+    </div>
+    <div class="single_img">
+      <img src="work5.jpg" alt="">
+    </div>
+    <div class="single_img">
+      <img src="work6.jpg" alt="">
+    </div>
+  </div>
+</section>
+<!------------contact--------->
+<section id="contact">
+  <div class="container">
+    <h1>Get In Touch</h1>
+    <div class="row">
+      <div class="col-md-6">
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <input type="number" class="form-control" placeholder="Phone Number">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Email id">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" name="button">Send Message</button>
+      </form>
+      </div>
+      <div class="col-md-6 contact-info">
+        <div class="follow"><b>Address:</b><i class="fa fa-map-marker"></i>Old Washermenpet,Chennai,IN</div>
+        <div class="follow"><b>Phone:</b><i class="fa fa-phone"></i>7338924951</div>
+        <div class="follow"><b>Email:</b><i class="fa fa-envelope-o"></i>kirantej486@gmail.com</div>
+        <div class="follow"><label><b>Get Social:</b></label>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--------------Footer-------->
+<section id="footer">
+  <div class="container text-center">
+    <p>Made With <i class="fa fa-heart-o "></i> by Tejkiran</p>
+  </div>
+
+</section>
+<!----------Footer End------->
+<script src="js/smooth-scroll.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
+  </body>
+</html>
